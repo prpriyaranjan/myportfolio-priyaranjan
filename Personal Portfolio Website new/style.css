@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+:root{
+    display: flex;
+}
+
+.home{
+    height: 100vh;
+}
+@media only screen and (max-width:500px){
+    :root{
+        color-scheme: light dark;
+        
+    }
+    :root{
+    --text-color:(#333 #ccc);
+    }
+    .p-description{
+        overflow-y: scroll;
+    }
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 25px 5px 25px;
+    height: 8vh;
+    position: sticky;
+    
+}
+.logo{
+    font-weight: 700;
+    font-size: 1.5rem;
+    
+}
+.logo:hover{
+    border: 2px solid red;
+    border-left: none;
+    border-right: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding:3px 5px 3px 5px;
+    transition: 0.4s  all;
+    
+    
+}
+.logo span{
+ color:red;
+
+ }
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+    
+}
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    font-weight: 700;
+
+}
+nav ul li:hover{
+    border: 2px solid red;
+    border-left: none;
+    border-right: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding:3px 5px 3px 5px;
+    transition: 0.5s all;
+}
+nav ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+.menu-bar{
+    background-color: red;
+    border-radius: 8px;
+    padding: 2px;
+}
+.main{
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+    
+}
+.one{
+    width: 50%;
+    height: 75vh;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.one-content{
+    position: relative;
+    top:28%;
+    min-width: 400px;
+    line-height: 1;
+    height:60%;
+    
+}
+.one-content p{
+    padding: 0;
+    height: 100px;
+}
+#element{
+    color: red;
+
+}
+#name{
+    height: 65px;
+}
+.one-content span{
+    width: 100%;
+}
+
+.two{
+    height: 400px;
+    width: 50%;
+    height: 75vh;
+    background-image: url(mis.png);
+    background-size: cover;
+}
+.hire-section{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .btn{
+    padding:2px 5px 2px 5px;
+    margin-left:5px;;
+    border-radius: 5px;
+    box-shadow: 2px 4px black;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    font-weight: 500;
+    background-color: none;
+    color:black;
+    font-size: 1rem;
+}
+.btn:hover{
+    background-color: white;
+}
+.education{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+    
+}
+.edu-head{
+    display:flex;
+    justify-content: center;
+    font-size: 40px;
+    padding:10px;
+    font-weight: 700;
+}
+.edu-head span{
+    margin-right:15px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.edu{
+    display: flex;
+    justify-content: center;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:50px;
+    
+}
+.social-media img{
+    padding-bottom: 15px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.social-media img:hover{
+    transform: scale(1.2);
+}
+.line{
+    position: relative;
+    height: 200px;
+    width: 2px;
+    background-color: red;
+    left: 13px;
+    margin-bottom: 5px;
+}
+.three{
+    width:50%;
+    height: 800px;
+}
+.four{
+    width: 50%;
+    height: 800px;
+    
+}
+.sub1{
+    height: 33.3%;
+    width: 100%;
+    
+    display: flex;
+}
+.sub2{
+    height: 33.3%;
+    width: 100%;
+    
+    display: flex;
+}
+.sub3{
+    height: 33.3%;
+    width: 100%;
+    
+    display: flex;
+}
+.school{
+height: 100%;
+width: 50%;
+padding: 10px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.inst-name h4,p{
+     padding-top: 8px;
+}
+.marks{
+ height: 100%;
+ width: 50%; 
+ padding: 10px;
+  
+ display: flex;
+ flex-direction: column;
+justify-content: center;
+align-items: center; 
+}
+.four{
+    display: flex;
+ flex-direction: column;
+justify-content: center;
+align-items: center; 
+}
+.four .skills,p{
+    line-height: 2.99;
+}
+meter{
+    width: 175px;
+    
+}
+.four p{
+    font-weight: 600;
+}
+.four p:hover{
+    color:red;
+
+}
+.school p:hover{
+    color: red;
+}
+.school p{
+    font-weight: 600;
+}
+.projects{
+    height: 190vh;
+
+}
+.project-head{
+    display: flex;
+    justify-content: center;
+     font-size: 40px;
+    font-weight: 600;
+    
+}
+.project-head img {
+    height: 50px;
+    width: 60px;
+    padding-right: 10px;
+}
+.p-container{
+    width: 750px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: 10px solid transparent;
+    border-radius: 10px;
+}
+.p-con1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.p-description{
+    height: 30%;
+    padding: 10px 25px;
+    font-size: x-small;
+    width: 95%;
+    text-wrap: wrap;
+    position: absolute;
+    top:65%;
+    left: 2%;
+    border: 10px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #aaaa ;
+    padding: 10px;
+}
+.p-container img{
+    width: 95%;
+    height: 430px;
+    color: black;
+    display: flex;
+    position: relative;
+    left: 3%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #aaaa ;
+}
+.footer{
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+.cards{
+    height: 350px;
+    width: 225px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 1s ease-in-out;
+    background-color: rgb(243, 240, 240);
+    box-shadow: 5px 5px 5px #aaaa;
+    border: 1px solid white;
+    position: relative;
+}
+.hoverCard{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    padding:5px 15px 0 15px;
+    transition: 1.2s all;
+    transform: translateY(25px);
+    opacity: 0;
+}
+.cards:hover .hoverCard{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.cards img .cards img{
+    height: 250px;
+    width: 80%;
+    border-radius: 5px;
+}
+.cards p{
+    font-size: 10px;
+}
+.fa{
+    color: red;
+}
+.contact{
+    
+    height: 60vh;
+    background: url("contact-live.svg")no-repeat fixed center ;
+    width: 100%;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+
+}
+.contact img{
+    height: 28px;
+    width: 28px;
+    padding: 7px 5px 0 0;
+
+}
+.contact p{
+    padding-left:3px;;
+}
+.msg{
+    background: none;
+    b
+}
+
